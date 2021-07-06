@@ -1201,6 +1201,7 @@ body{
 @media only screen and (max-width: 767px){
     html{
         overflow-x: hidden;
+        cursor: default;
     }
     body{
         width:100vw;
@@ -1216,9 +1217,11 @@ body{
     #priyanshumodi{
         font-size: 25px;
         text-align: left;
+        cursor: default;
     }
     .small-title #priyanshumodi{
-        font-size: 20px;     
+        font-size: 20px;   
+        cursor: default;  
     }
     #web-nav-items{
         display: none;
@@ -1238,6 +1241,7 @@ body{
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 0%;
+        cursor: default;
     }
     .main-image-container{
         background-size: cover;
@@ -1309,10 +1313,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -62px;
+            background-position: 50px -38px;
         }
         100%{
-            background-position: 10000px -62px;
+            background-position: 10000px -38px;
         }
     }
     @-webkit-keyframes waves-cpp{
@@ -1320,10 +1324,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -62px;
+            background-position: 50px -38px;
         }
         100%{
-            background-position: 10000px -62px;
+            background-position: 10000px -38px;
         }
     }
     #java:hover{
@@ -1335,10 +1339,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -38px;
+            background-position: 50px -15px;
         }
         100%{
-            background-position: 10000px -38px;
+            background-position: 10000px -15px;
         }
     }
     @-webkit-keyframes waves-java{
@@ -1346,10 +1350,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -38px;
+            background-position: 50px -15px;
         }
         100%{
-            background-position: 10000px -38px;
+            background-position: 10000px -15px;
         }
     }
     #css:hover{
@@ -1361,10 +1365,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -28px;
+            background-position: 50px -18px;
         }
         100%{
-            background-position: 10000px -28px;
+            background-position: 10000px -18px;
         }
     }
     @-webkit-keyframes waves-css{
@@ -1372,10 +1376,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -28px;
+            background-position: 50px -18px;
         }
         100%{
-            background-position: 10000px -28px;
+            background-position: 10000px -18px;
         }
     }
     #js:hover{
@@ -1387,10 +1391,10 @@ body{
             background-position: 0px 0px;
         }
         0.1%{
-            background-position: 50px -67px;
+            background-position: 50px -55px;
         }
         100%{
-            background-position: 10000px -67px;
+            background-position: 10000px -55px;
         }
     }
     @-webkit-keyframes waves-js{
@@ -1398,10 +1402,10 @@ body{
             background-position: 0px 0px;
         }
         0.5%{
-            background-position: 50px -67px;
+            background-position: 50px -55px;
         }
         100%{
-            background-position: 10000px -67px;
+            background-position: 10000px -55px;
         }
     }
     .projects-container{
@@ -1440,14 +1444,15 @@ body{
     #jokebox-container{
         background: url("images/jb-horizontal.jpg");
         background-size: cover;
+        cursor: default;
     }
     #keystriker-container{
         background: url("images/ks-horizontal.jpg");
         background-size: cover;
+        cursor: default;
     }
     #jokebox-container:hover, #keystriker-container:hover{
-        transform: scale(1.05);
-        box-shadow: 0px 0px 35px rgba(49, 49, 49, 0.3);
+        transform: scale(1);
     }
     #projects-hover-tip{
         display: none;
@@ -1575,11 +1580,14 @@ body{
     .film-description-container{
         display: none;
     }
+    .film-image-container{
+        cursor: default;
+    }
     #int-pain-container:hover{
-        transform: scale(1.05);
+        transform: scale(1);
     }
     #zakhm-container:hover{
-        transform: scale(1.05);
+        transform: scale(1);
     }
     .int-pain, .zakhm{
         display: flex;
