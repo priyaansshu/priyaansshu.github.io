@@ -1516,10 +1516,11 @@ body{
         margin: 50px 0px;
         transition: all 0.5s ease;
         box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
-    }
-    .background-change-scripts #f-top-left-container{
         background-color:#f7c331;
     }
+    /* .background-change-scripts #f-top-left-container{
+        background-color:#f7c331;
+    } */
     .scripts-container{
         align-self: center;
         margin: 30px 0px 40px;
@@ -1551,10 +1552,11 @@ body{
         margin: 10px 0px 50px;
         transition: all 0.5s ease;
         box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.2);
-    }
-    .background-change-films #f-bottom-left-container{
         background-color:#f7c331;
     }
+    /* .background-change-films #f-bottom-left-container{
+        background-color:#f7c331;
+    } */
     .films-container{
         display: flex;
         justify-content: flex-start;
