@@ -368,45 +368,45 @@
         }, bgoptions1);
         backgroundChange.observe(containerFour);
 
-        const scripts = document.querySelector(".scripts-container");
-        const bgoptionsscript = {
-            threshold: "1"
-        };
-        const scriptbg = new IntersectionObserver(function(entries, scriptbg){
-            entries.forEach(entry => {
-                if(!entry.isIntersecting)
-                {
-                    // console.log("out");
-                    document.body.classList.remove("background-change-scripts");
-                    return;
-                }
-                else{
-                    // console.log("in");
-                    document.body.classList.add("background-change-scripts");
-                } 
-            });
-        }, bgoptionsscript);
-        scriptbg.observe(scripts);
+        // const scripts = document.querySelector(".scripts-container");
+        // const bgoptionsscript = {
+        //     threshold: "1"
+        // };
+        // const scriptbg = new IntersectionObserver(function(entries, scriptbg){
+        //     entries.forEach(entry => {
+        //         if(!entry.isIntersecting)
+        //         {
+        //             // console.log("out");
+        //             document.body.classList.remove("background-change-scripts");
+        //             return;
+        //         }
+        //         else{
+        //             // console.log("in");
+        //             document.body.classList.add("background-change-scripts");
+        //         } 
+        //     });
+        // }, bgoptionsscript);
+        // scriptbg.observe(scripts);
         
-        const films = document.getElementById("f-bottom-left-container");
-        const bgoptionsfilms = {
-            threshold: "0.5"
-        };
-        const filmsbg = new IntersectionObserver(function(entries, filmsbg){
-            entries.forEach(entry => {
-                if(!entry.isIntersecting)
-                {
-                    // console.log("out");
-                    document.body.classList.remove("background-change-films");
-                    return;
-                }
-                else{
-                    // console.log("in");
-                    document.body.classList.add("background-change-films");
-                } 
-            });
-        }, bgoptionsfilms);
-        filmsbg.observe(films);
+        // const films = document.getElementById("f-bottom-left-container");
+        // const bgoptionsfilms = {
+        //     threshold: "0.5"
+        // };
+        // const filmsbg = new IntersectionObserver(function(entries, filmsbg){
+        //     entries.forEach(entry => {
+        //         if(!entry.isIntersecting)
+        //         {
+        //             // console.log("out");
+        //             document.body.classList.remove("background-change-films");
+        //             return;
+        //         }
+        //         else{
+        //             // console.log("in");
+        //             document.body.classList.add("background-change-films");
+        //         } 
+        //     });
+        // }, bgoptionsfilms);
+        // filmsbg.observe(films);
 
         const containerFive = document.getElementById("container5");
         const bgoptions2 = {
