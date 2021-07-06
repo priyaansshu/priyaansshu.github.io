@@ -1244,7 +1244,7 @@ body{
     }
     .main-image-container{
         background-size: cover;
-        height: 95vh;
+        /* height: 95vh; */
         background-attachment: scroll;
     }
     #container1{
