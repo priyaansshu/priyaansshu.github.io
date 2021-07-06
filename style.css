@@ -1244,12 +1244,12 @@ body{
     }
     .main-image-container{
         background-size: cover;
-        /* height: 95vh; */
+        height: 95vh;
         background-attachment: scroll;
     }
     #container1{
         max-width: 100vw;
-        height: 95vh;
+        height: 100vh;
     }
     .scroll, .scrollimgcontainer{
         display: none;
