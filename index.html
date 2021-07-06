@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Modi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="navcontainer">
+        <nav class="navbar">
+            <h1 class="main-title" id="priyanshumodi" style="cursor: pointer" onclick="openindex()">Priyanshu Modi</h1>
+            <ul class="nav-items" id="web-nav-items">
+                <li id="nav-programming" onclick="gotoprogramming()">Programming</li>
+                <li id="nav-filmmaking" onclick="gotofilmmaking()">filmmaking</li>
+                <li id="nav-writing" onclick="gotowriting()">writing</li>
+                <li id="nav-about" onclick="gotoabout()">about</li>
+            </ul>
+            <ul class="nav-items" id="mobile-nav-items">
+                <img src="images/programminglogo.png" alt="programming" id="nav-programming" onclick="gotoprogramming()">
+                <img src="images/filmmakinglogo.png" alt="filmmaking" id="nav-filmmaking" onclick="gotofilmmaking()">
+                <img src="images/writinglogo.png" alt="writing" id="nav-writing" onclick="gotowriting()">
+                <img src="images/aboutlogo.png" alt="about" id="nav-about" onclick="gotoabout()"> 
+            </ul>
+        </nav>
+    </div>
+    <div class="scroll">explore</div>
+    <div class="scrollimgcontainer">
+        <img src="images/doubledown.png" alt="" class="scrollimg">
+    </div>
+    <div class="container" id="container1">
+        <div class="main-image-container"></div>
+    </div><!--container(first window)-->
+
+    <div class="pages-container">
+        <div class="container" id="container2"> <!--Programming-container-->
+            <div class="left-container" id="p-left-container">
+                <div class="left-top-container" >
+                    <h1 class="page-title" id="programming-title">Programming</h1>
+                    <div class="programming-skills-container">
+                        <div class="dsa-container">
+                            <img src="images/dsa-logo.png" alt="" class="dsa-logo">
+                            <p class="programming-skills" id="dsa">Data Structures And Algorithms</p>
+                        </div>
+                        <div class="frontend-container">
+                            <img src="images/programminglogo.png" alt="" class="frontend-logo">
+                            <p class="programming-skills" id="frontend">Front-End Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-bottom-container">
+                    <img src="images/memoji1.png" alt="" id="programmingiln">
+                </div>
+            </div>
+            <div class="right-container" id="p-right-container">
+                <div class="languages-container">
+                    <h2 class="content-title" id="languages-title">Languages</h2>
+                    <ul class="languages">
+                        <li id="cpp">C/C++</li>
+                        <li id="java">Java</li>
+                        <li id="css">CSS</li>
+                        <li id="js">JavaScript</li>
+                    </ul>
+                    <div class="hover-tip-container">
+                        <img src="images/info-icon.png" alt="info" class="info-icon">
+                        <p class="hover-tip">Hover over Language for skill level</p>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <h2 class="content-title" id="projects-title">projects</h2>
+                    <div class="projects" id="web-projects"> 
+                        <div class="jokebox">
+                            <div class="project-image-container" id="jokebox-container">
+                                <button class="project-link" id="jokebox-link" onclick="openjokebox()">
+                                    <p id="jokebox-btn-text">Visit JokeBox</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="keystriker">
+                            <div class="project-image-container" id="keystriker-container">
+                                <button class="project-link" id="keystriker-link" onclick="openkeystriker()">
+                                    <p id="keystriker-btn-text"> Visit KeyStriker</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects" id="mobile-projects"> 
+                        <div class="jokebox">
+                            <div class="project-image-container" id="jokebox-container">
+                            </div>
+                            <button class="project-link" id="jokebox-link" onclick="openjokebox()">
+                                <p id="jokebox-btn-text">Visit JokeBox</p>
+                            </button>
+                        </div>
+                        <div class="keystriker">
+                            <div class="project-image-container" id="keystriker-container">
+                            </div>
+                            <button class="project-link" id="keystriker-link" onclick="openkeystriker()">
+                                <p id="keystriker-btn-text"> Visit KeyStriker</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-description-container">
+                        <p class="project-description" id="jokebox-description">A one-click random joke<br>generating Chrome Extension</p>
+                        <p class="project-description" id="keystriker-description">Typing game made using<br>HTML, CSS & JavaScript</p>
+                    </div>
+                    <div class="hover-tip-container" id="projects-hover-tip">
+                        <img src="images/info-icon.png" alt="info" class="info-icon">
+                        <p class="hover-tip" >Hover over Project for details</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--container(second window)-->
+
+        <div class="container" id="container3"> <!--Filmmaking-container-->
+            <div class="top-container" id="f-top-container">
+                <div class="top-left-container" id="f-top-left-container">
+                    <h2 class="content-title" id="scripts-title">scripts</h2>
+                    <div class="scripts-container">
+                        <div class="script-container-1" onclick="openscript1()">
+                            <!-- <img src="images/up-right.png" alt="" class="visit-image"> -->
+                            <img id="camus-image" src="images/camus-image.jpg" alt="">
+                            <p class="script-title" id="camus-title">Read Script</p>
+                        </div>
+                        <div class="script-container-2" onclick="openscript2()">
+                            <!-- <img src="images/up-right.png" alt="" class="visit-image"> -->
+                            <img id="whacked-image" src="images/whacked-image.jpg" alt="">
+                            <p class="script-title" id="whacked-title">Read Script</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-right-container" id="f-top-right-container">
+                    <h1 class="page-title" id="filmmaking-title">filmmaking</h1>
+                    <div class="filmmaking-skills-container">
+                        <div class="screenwriting-container">
+                            <img src="images/screenwriting-logo.png" alt="" class="screenwriting-logo">
+                            <p class="filmmaking-skills" id="screenwriting">Screenwriting</p>
+                        </div>
+                        <div class="direction-container">
+                            <img src="images/direction-logo.png" alt="" class="direction-logo">
+                            <p class="filmmaking-skills" id="direction">Direction</p>
+                        </div>
+                        <div class="cinematography-container">
+                            <img src="images/cinematography-logo.png" alt="" class="cinematography-logo">
+                            <p class="filmmaking-skills" id="cinematography">Cinematography</p>
+                        </div>
+                        <div class="editing-container">
+                            <img src="images/editing-logo.png" alt="" class="editing-logo">
+                            <p class="filmmaking-skills" id="editing">Editing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container" id="f-bottom-container">
+                <div class="bottom-left-container" id="f-bottom-left-container">
+                    <h2 class="content-title" id="films-title">Short Films</h2>
+                    <div class="films-container" id="web-films">
+                        <div class="int-pain">
+                            <div class="film-image-container" id="int-pain-container">
+                                <button class="film-link" id="int-pain-link" onclick="openintpain()">
+                                    <p id="int-pain-btn-text">Watch int. pain</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="zakhm">
+                            <div class="film-image-container" id="zakhm-container">
+                                <button class="film-link" id="zakhm-link" onclick="openzakhm()">
+                                    <p id="zakhm-btn-text">Watch Zakhm</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="films-container" id="mobile-films">
+                        <div class="int-pain">
+                            <p class="film-description" id="int-pain-description">int. Pain(2021)</p>
+                            <div class="film-image-container" id="int-pain-container">
+                            </div>
+                            <button class="film-link" id="int-pain-link" onclick="openintpain()">
+                                <p id="int-pain-btn-text">Watch int. pain</p>
+                            </button>
+                        </div>
+                        <div class="zakhm">
+                            <p class="film-description" id="zakhm-description">Zakhm(2021)</p>
+                            <div class="film-image-container" id="zakhm-container">
+                            </div>
+                            <button class="film-link" id="zakhm-link" onclick="openzakhm()">
+                                <p id="zakhm-btn-text">Watch Zakhm</p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="film-description-container">
+                        <p class="film-description" id="int-pain-description">int. Pain(2021)</p>
+                        <p class="film-description" id="zakhm-description">Zakhm(2021)</p>
+                    </div>
+                    <div class="hover-tip-container" id="f-hover-tip-container">
+                        <img src="images/info-icon.png" alt="info" class="info-icon">
+                        <p class="hover-tip">Hover over Film for details</p>
+                    </div>
+                </div>
+                <div class="bottom-right-container" id="f-bottom-right-container">
+                    <img src="images/memoji2-shadow.png" alt="filmmaking" class="filmmaking-iln">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="container4"> <!--Writing-container-->
+            <div class="top-container" id="w-top-container">
+                <div class="top-left-container" id="w-top-left-container">
+                    <div class="top-left-top-container" id="w-top-left-top-container">
+                        <h1 class="page-title" id="writing-title">writing</h1>
+                        <div class="achievements-container">
+                            <div class="achievement1">
+                                <img src="images/gold-medal.png" alt="" class="gold-medal">
+                                <p class="achievement" id="a-1">Slam Poetry Comp. SRCC, 2021</p>
+                            </div>
+                            <div class="achievement2">
+                                <img src="images/gold-medal.png" alt="" class="gold-medal">
+                                <p class="achievement" id="a-2">Slam Poetry Comp. DTU, 2020</p>
+                            </div>
+                            <div class="achievement3">
+                                <img src="images/gold-medal.png" alt="" class="gold-medal">
+                                <p class="achievement" id="a-3">Slam Poetry Comp. DRC, 2020</p>
+                            </div>
+                            <div class="achievement4">
+                                <img src="images/gold-medal.png" alt="" class="gold-medal">
+                                <p class="achievement" id="a-4">Impromptu Writing comp. IIIT D, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-right-container" id="w-top-right-container">
+                    <img src="images/memoji3.png" alt="writing" class="writing-iln" id="web-writing-iln">
+                    <img src="images/memoji-handraise.png" alt="writing" class="writing-iln" id="mobile-writing-iln">
+                </div>
+            </div>
+            <div class="middle-container" id="w-middle-container">
+                <h2 class="content-title" id="articles-title">Articles</h2>
+                <div class="articles-container">
+                    <div class="articles-container-inner">
+                        <div class="article" id="article1">
+                            <h2 class="article-heading" id="article1-heading">The Void</h2>
+                            <p class="article-content" id="article1-content">And just when you think that you're safe, love will target you, it'll start running towards you and it'd take the most unexpected path, and right when you feel that you are complete, it will throw at you the first of its many darts, ​the Void-an unprecedented feeling of...</p>
+                            <button class="article-link" id="article1-link" onclick="openarticle1()">
+                                <p id="article1-btn-text">Read rest</p>
+                            </button>
+                        </div>
+                        <div class="article" id="article2">
+                            <h2 class="article-heading" id="article2-heading">The Hurricane</h2>
+                            <p class="article-content" id="article2-content">Love the blunder and the cure, the chaos, and the silence, the sharp thorn lying under a blanket of roses. And it's not too late when you realize this, just when the hurricane hits you. The Hurricane- the second of love's many darts. It's when you start recovering from the pain...</p>
+                            <button class="article-link" id="article2-link" onclick="openarticle2()">
+                                <p id="article2-btn-text">Read rest</p>
+                            </button>
+                        </div>
+                        <div class="article" id="article3">
+                            <h2 class="article-heading" id="article3-heading">The Truth</h2>
+                            <p class="article-content" id="article3-content">Have you ever crashed one of your little toes against a table, a cupboard, or a bed? You always knew the furniture was there, it has been there for a long time, but the crashing, nevertheless, seems inevitable. And if you try to recall you’ve always hurt your toe either while you were so...</p>
+                            <button class="article-link" id="article3-link" onclick="openarticle3()">
+                                <p id="article3-btn-text">Read rest</p>
+                            </button>
+                        </div>
+                        <div class="article" id="article4">
+                            <h2 class="article-heading" id="article4-heading">Oppres-or/ed</h2>
+                            <p class="article-content" id="article4-content">A young man lies dead<br>in the arms of a system<br>bundled with young men, all dead.<br>Red spots on a white shirt<br>are the parameters of effectiveness<br>in killing the parasites.<br>Young oppressor tops the list...</p>
+                            <button class="article-link" id="article4-link" onclick="openarticle4()">
+                                <p id="article4-btn-text">Read rest</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-container" id="w-bottom-container">
+                <!-- <img src="images/icons8-external-link-144.png" alt="external link" class="external-link"> -->
+                <p class="medium-link" onclick="openmedium()">Read more</p>
+            </div>
+        </div>
+
+        <div class="container" id="container5"> <!--About-container-->
+            <div class="left-container" id="a-left-container">
+                <div class="left-top-container" id="a-left-top-container">
+                    <p class="about-content">Hi, I'm a 19 year old Engineering Sophomore studying Information Technology, deeply interested in Programming, Filmmaking and Writing.</p>
+                </div>
+                <div class="left-bottom-container" id="a-left-bottom-container">
+                    <p class="contact">Contact me</p>
+                    <h1 class="email" onclick="openemail()">priyanshumodi.1909@gmail.com</h1>
+                    <div class="social-container">
+                        <div class="social-title-container">
+                            <p class="social-title" data-hover="Social Handles">Social</p>
+                        </div>
+                        <div class="social">
+                            <img class="social-logo" src="images/icons8-instagram-480.png" alt="instagram" id="instagram" onclick="openinstagram()">
+                            <img class="social-logo" src="images/icons8-linkedin-480.png" alt="linkedin" id="linked" onclick="openlinkedin()">
+                            <img class="social-logo" src="images/icons8-github-480.png" alt="github" id="github" onclick="opengithub()">
+                            <img class="social-logo" src="images/icons8-medium-monogram-480.png" alt="medium" id="medium" onclick="openmedium()">
+                            <img class="social-logo" src="images/icons8-youtube-play-button-480.png" alt="youtube" id="youtube" onclick="openyoutube()">
+                            <img class="social-logo" src="images/icons8-twitter-480.png" alt="twitter" id="twitter" onclick="opentwitter()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container" id="a-right-container">
+                <img src="images/memoji-shadow.png" alt="Priyanshu's memoji" class="memoji">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        const image = document.querySelector(".main-image-container");
+        const text = document.querySelector(".scroll");
+        const containers = document.querySelectorAll(".container");
+        const containerFour = document.getElementById("container4");
+        
+        // Create the translate3d function
+        function setTranslate(xPos, yPos, el) {
+            el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+        }
+
+        // Add event Listenter to Window
+        window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+        // Define position variables
+        let xScrollPosition;
+        let yScrollPosition;
+
+        // Scroll function
+        function scrollLoop() {
+        xScrollPosition = window.pageXOffset;
+        yScrollPosition = window.pageYOffset;
+
+        // We only change the Y variable
+        setTranslate(0, yScrollPosition * -0.1, image);
+        setTranslate(0, yScrollPosition * -0.2, text);
+        
+        // We use requestAnimationFrame to target the GPU instead of the CPU
+        requestAnimationFrame(scrollLoop);
+        // console.log("y: "+yScrollPosition);
+        }
+        
+        // scroll opacity 
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $(".scroll").css("opacity", 1-$(window).scrollTop()/350);
+                $(".scrollimg").css("opacity", 1-$(window).scrollTop()/200);
+            })
+        })
+
+        const bgoptions1 = {
+            threshold: "0.25",
+            rootMargin: "0px 0px -250px"
+        };
+        const backgroundChange = new IntersectionObserver(function(entries, backgroundChange){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting)
+                {
+                    entry.target.classList.remove("background-change");
+                    return;
+                }
+                else{
+                    // console.log(entry);
+                    entry.target.classList.add("background-change");
+                } 
+            });
+        }, bgoptions1);
+        backgroundChange.observe(containerFour);
+
+        const scripts = document.querySelector(".scripts-container");
+        const bgoptionsscript = {
+            threshold: "1"
+        };
+        const scriptbg = new IntersectionObserver(function(entries, scriptbg){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting)
+                {
+                    // console.log("out");
+                    document.body.classList.remove("background-change-scripts");
+                    return;
+                }
+                else{
+                    // console.log("in");
+                    document.body.classList.add("background-change-scripts");
+                } 
+            });
+        }, bgoptionsscript);
+        scriptbg.observe(scripts);
+        
+        const films = document.getElementById("f-bottom-left-container");
+        const bgoptionsfilms = {
+            threshold: "0.5"
+        };
+        const filmsbg = new IntersectionObserver(function(entries, filmsbg){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting)
+                {
+                    // console.log("out");
+                    document.body.classList.remove("background-change-films");
+                    return;
+                }
+                else{
+                    // console.log("in");
+                    document.body.classList.add("background-change-films");
+                } 
+            });
+        }, bgoptionsfilms);
+        filmsbg.observe(films);
+
+        const containerFive = document.getElementById("container5");
+        const bgoptions2 = {
+            threshold: "0.35"
+        };
+        const backgroundChange2 = new IntersectionObserver(function(entries, backgroundChange2){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting)
+                {
+                    entry.target.classList.remove("background-change-a");
+                    return;
+                }
+                else{
+                    entry.target.classList.add("background-change-a");
+                } 
+            });
+        }, bgoptions2);
+        backgroundChange2.observe(containerFive);
+
+        const options = {
+            threshold: "0.1"
+        }
+        const observer = new IntersectionObserver(function(entries, observer){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting)
+                {
+                    return;
+                }
+                else{
+                    console.log(entry.target);
+                    entry.target.classList.toggle("show-container");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+        containers.forEach(container => {
+            observer.observe(container);
+        });
+
+        const pagescontainer= document.querySelector(".pages-container");
+        const navoptions={threshold:"0.1", rootMargin:"1000px 0px 0px"};
+        const navobserver = new IntersectionObserver(function(entries, navobserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting)
+                {
+                    console.log("no: " + entry.target);
+                    document.body.classList.remove("small-title");
+                    return;
+                }
+                else{
+                    console.log("yes: " + entry.target);
+                    document.body.classList.add("small-title");
+                }
+            });
+        }, navoptions);
+        navobserver.observe(pagescontainer);
+
+        function openindex(){
+            window.open("index.html", "_self");
+        }
+
+        function gotoprogramming(){
+            $('html, body').animate({
+                scrollTop: $("#container2").offset().top
+            }, 1000);
+        }
+        function gotofilmmaking(){
+            $('html, body').animate({
+                scrollTop: $("#container3").offset().top
+            }, 1000);
+        }
+        function gotowriting(){
+            $('html, body').animate({
+                scrollTop: $("#container4").offset().top
+            }, 1000);
+        }
+        function gotoabout(){
+            $('html, body').animate({
+                scrollTop: $("#container5").offset().top
+            }, 1000);
+        }
+
+        function openjokebox(){
+            window.open("https://chrome.google.com/webstore/detail/jokebox/aaknmcfmalngompbpgmdgemkeonohiec");
+        }
+        function openkeystriker(){
+            window.open("https://priyaansshu.github.io/keystriker/");
+        }
+
+        function openscript1(){
+            window.open("film-scripts/Camus.pdf");
+        }
+        function openscript2(){
+            window.open("film-scripts/whacked.pdf");
+        }
+
+        function openintpain(){
+            window.open("https://www.youtube.com/watch?v=MsxRX02kD7Q");
+        }
+        function openzakhm(){
+            window.open("https://www.youtube.com/watch?v=32mqAra6phY");
+        }
+
+        function openmedium(){
+            window.open("https://priyaansshu.medium.com");
+        }
+        function openarticle1(){
+            window.open("https://medium.com/@priyaansshu/the-void-5aaccfdcb504")
+        }
+        function openarticle2(){
+            window.open("https://priyaansshu.medium.com/the-manual-of-love-the-hurricane-3261ef387f73")
+        }
+        function openarticle3(){
+            window.open("https://priyaansshu.medium.com/the-manual-of-love-the-truth-56a2b3b4a748")
+        }
+        function openarticle4(){
+            window.open("https://priyaansshu.medium.com/oppress-or-ed-80d9d29aea7c")
+        }
+
+        function openemail(){
+            window.open("mailto:priyanshumodi.1909@gmail.com");
+        }   
+        function openinstagram(){
+            window.open("https://www.instagram.com/priyaansshu/");
+        }
+        function openlinkedin(){
+            window.open("https://www.linkedin.com/in/priyanshu-modi-5675941b5/");
+        }
+        function opengithub(){
+            window.open("https://github.com/priyaansshu");
+        }
+        function openyoutube(){
+            window.open("https://www.youtube.com/channel/UCGp-HcBQyhTIPmDwfcZwy4A");
+        }
+        function opentwitter(){
+            window.open("https://twitter.com/priyaansshu");
+        }
+    </script>
+</body>
+</html>
