@@ -349,83 +349,44 @@
             })
         })
 
-        const bgoptions1 = {
-            threshold: "0.25",
-            rootMargin: "0px 0px -250px"
-        };
-        const backgroundChange = new IntersectionObserver(function(entries, backgroundChange){
-            entries.forEach(entry => {
-                if(!entry.isIntersecting)
-                {
-                    entry.target.classList.remove("background-change");
-                    return;
-                }
-                else{
-                    // console.log(entry);
-                    entry.target.classList.add("background-change");
-                } 
-            });
-        }, bgoptions1);
-        backgroundChange.observe(containerFour);
+        if(screen.width > 767){
+            const bgoptions1 = {
+                threshold: "0.25",
+                rootMargin: "0px 0px -250px"
+            };
+            const backgroundChange = new IntersectionObserver(function(entries, backgroundChange){
+                entries.forEach(entry => {
+                    if(!entry.isIntersecting)
+                    {
+                        entry.target.classList.remove("background-change");
+                        return;
+                    }
+                    else{
+                        // console.log(entry);
+                        entry.target.classList.add("background-change");
+                    } 
+                });
+            }, bgoptions1);
+            backgroundChange.observe(containerFour);
 
-        // const scripts = document.querySelector(".scripts-container");
-        // const bgoptionsscript = {
-        //     threshold: "1"
-        // };
-        // const scriptbg = new IntersectionObserver(function(entries, scriptbg){
-        //     entries.forEach(entry => {
-        //         if(!entry.isIntersecting)
-        //         {
-        //             // console.log("out");
-        //             document.body.classList.remove("background-change-scripts");
-        //             return;
-        //         }
-        //         else{
-        //             // console.log("in");
-        //             document.body.classList.add("background-change-scripts");
-        //         } 
-        //     });
-        // }, bgoptionsscript);
-        // scriptbg.observe(scripts);
-        
-        // const films = document.getElementById("f-bottom-left-container");
-        // const bgoptionsfilms = {
-        //     threshold: "0.5"
-        // };
-        // const filmsbg = new IntersectionObserver(function(entries, filmsbg){
-        //     entries.forEach(entry => {
-        //         if(!entry.isIntersecting)
-        //         {
-        //             // console.log("out");
-        //             document.body.classList.remove("background-change-films");
-        //             return;
-        //         }
-        //         else{
-        //             // console.log("in");
-        //             document.body.classList.add("background-change-films");
-        //         } 
-        //     });
-        // }, bgoptionsfilms);
-        // filmsbg.observe(films);
-
-        const containerFive = document.getElementById("container5");
-        const bgoptions2 = {
-            threshold: "0.35"
-        };
-        const backgroundChange2 = new IntersectionObserver(function(entries, backgroundChange2){
-            entries.forEach(entry => {
-                if(!entry.isIntersecting)
-                {
-                    entry.target.classList.remove("background-change-a");
-                    return;
-                }
-                else{
-                    entry.target.classList.add("background-change-a");
-                } 
-            });
-        }, bgoptions2);
-        backgroundChange2.observe(containerFive);
-
+            const containerFive = document.getElementById("container5");
+            const bgoptions2 = {
+                threshold: "0.35"
+            };
+            const backgroundChange2 = new IntersectionObserver(function(entries, backgroundChange2){
+                entries.forEach(entry => {
+                    if(!entry.isIntersecting)
+                    {
+                        entry.target.classList.remove("background-change-a");
+                        return;
+                    }
+                    else{
+                        entry.target.classList.add("background-change-a");
+                    } 
+                });
+            }, bgoptions2);
+            backgroundChange2.observe(containerFive);
+        }
         const options = {
             threshold: "0.1"
         }
